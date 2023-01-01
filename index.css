@@ -1,0 +1,272 @@
+html{
+    background-color: snow;
+	scroll-behavior: smooth;
+	
+/*	margin-right: 10px; */
+}
+.stephen{ 
+    font-size: 65px;
+/*	max-width: 1000px;*/
+    font-family: 'PT serif Sans', serif;
+    font-weight: 500; 
+    margin-top: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	font-size: vw;
+}
+.menu{
+	text-decoration: none;
+}
+.home {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column1 {
+  flex: 36%;
+  padding-right: 10px;
+  flex-shrink: 0;
+}
+
+.column2 {
+  	flex: 60%;
+  	padding: 5px;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title{
+    padding-top: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 100;
+    padding-bottom: 10px;
+    color: darkslategrey;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	
+	
+/*
+	justify-content: center;
+  	align-items: center;
+*/
+
+}
+.beach{
+	overflow: hidden;
+    object-fit: cover;
+    object-position: 
+	
+    width: 600px;
+    height: 850px;
+
+    margin: -20px;
+
+	position: fixed;
+	display: block;
+
+}
+
+img{
+	object-fit: contain;
+	width: 100%;
+}
+
+.socials{
+    color: #aaaaaa ;
+    transition: 0.2s;
+    font-size: 28px;
+    text-decoration: none; 
+    padding-right: 13px;
+    padding-top: 10px;
+}
+
+.social{
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+
+.socials:hover{
+    color: #000000;
+}
+
+.navbar a {
+  display: inline-block;
+  position: relative;
+  color: black;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 200;
+  text-decoration: none; 
+  float: right; 
+  padding: 10px 10px;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+	background-color: lightgray;
+}
+
+
+.crown{
+	background-color: transparent; 
+	text-decoration: none; 
+/*	object-fit: cover; */
+	display: block
+	object-position: 0px 0px;
+	font-size: 10px; 
+	height: 100px; 
+	filter: invert(50%);
+/*	text-align: center;*/
+	
+	padding-top: 200px;
+	
+}
+/*
+.section2{
+	background-color: snow;
+      height: 100%;
+      position: absolute;
+      top: 828px;
+      left: 497px;
+	  right: 200px; 
+      width: 65.5%;
+	  z-index: -1;
+}
+*/
+hr {
+	float: center;
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	display: block; 
+	text
+	border-width: 1px; 
+	border-color: white; 
+}
+.aboutmehead {
+/*	text-align: center; */
+	padding-top: 50px; 
+	font-family: 'PT serif', sans-serif;
+    font-weight: 100;
+	font-size: 30px;
+    color: darkslategrey;
+	display: block;
+	margin-left: auto;
+  	margin-right: auto; 
+}
+.aboutmebody{
+	font-family: 'Nunito Sans', sans-serif;
+    font-weight: 100;
+	text-align: left;
+	padding-top: 20px; 
+	color: black;
+	line-height: 1.5; 
+/*	margin-right: 100px;*/
+	margin-left: auto;
+  	margin-right: auto; 
+	display: block;
+    
+}
+	
+}
+
+.skills{
+	margin-left: auto;
+  	margin-right: auto;
+	
+	display: block;
+	padding-bottom: 30px; 
+}
+
+.experiencehead{
+	padding-top: 20px; 
+	 font-family: 'PT serif', sans-serif;
+    font-weight: 100;
+	font-size: 30px;
+    color: darkslategrey;
+	padding-bottom: 20px;
+	margin-left: auto;
+  	margin-right: auto;
+	display: block;
+	 
+}
+.experience{
+	display: block;
+	margin-left: auto;
+  	margin-right: auto; 
+	
+}
+.hr1{
+	float: center;
+	width: 50%;
+	margin-left: auto;
+  	margin-right: auto; 
+	border-width: 1px; 
+	border-color: white; 
+}
+.projects{
+	text-align: center; 
+	padding-top: 20px; 
+	 font-family: 'PT serif', sans-serif;
+    font-weight: 100;
+	font-size: 30px;
+    color: darkslategrey;
+	padding-bottom: 20px;
+	margin-left: auto;
+  	margin-right: auto;
+}
+.ProjectPic{
+  
+  width: 50%;
+}
+.ProjectPic2{
+  
+ justify-content: right;
+  
+  width: 49.7%;
+}
+
+.projectBody{
+	
+}
+@media only screen and (max-width: 540px) {
+    .beach {
+      display:none;
+    }
+	.column1 {
+		flex: none;
+	}
+}
+@media only screen and (max-width: 800px) {
+	.stephen{
+		font-size: 50px;
+	}
+	.title{
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.aboutmebody{
+		font-size: 12px;
+	}
+}
+
+
