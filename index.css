@@ -1,12 +1,9 @@
 html{
     background-color: snow;
 	scroll-behavior: smooth;
-	
-/*	margin-right: 10px; */
 }
 .stephen{ 
     font-size: 65px;
-/*	max-width: 1000px;*/
     font-family: 'PT serif Sans', serif;
     font-weight: 500; 
     margin-top: 300px;
@@ -131,7 +128,7 @@ img beach{
 .crown{
 	background-color: transparent; 
 	text-decoration: none; 
-	display: block
+	display: block;
 	object-position: 0px 0px;
 	font-size: 10px; 
 	height: 100px; 
@@ -145,7 +142,6 @@ hr {
 	margin-right: auto;
 	margin-left: auto;
 	display: block; 
-	text
 	border-width: 1px; 
 	border-color: white; 
 }
