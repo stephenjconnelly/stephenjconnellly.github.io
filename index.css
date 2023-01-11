@@ -18,19 +18,20 @@ html{
 .menu{
 	text-decoration: none;
 }
-.home {
+.row {
   display: flex;
   flex-wrap: wrap;
 }
 
 .column1 {
-  flex: 36%;
+  flex: 30%;
   padding-right: 10px;
+	display: flex;
   flex-shrink: 0;
 }
 
 .column2 {
-  	flex: 60%;
+  	flex: 68%;
   	padding: 5px;
 	display: flex;
     flex-direction: column;
@@ -57,19 +58,21 @@ html{
 .beach{
 	overflow: hidden;
     object-fit: cover;
-    object-position: 
-	
-    width: 600px;
+/*
+    width: px;
     height: 850px;
-
-    margin: -20px;
-
+*/
+/*	object-position: 0px -200px;*/
+/*	height: 1005px;*/
+	height: 1010;
+/*    margin: -20px;*/
+	margin-left: -8px;
+	margin-top: -8px;
 	position: fixed;
-	display: block;
-
+	display: flex;
 }
 
-img{
+img beach{
 	object-fit: contain;
 	width: 100%;
 }
@@ -128,29 +131,14 @@ img{
 .crown{
 	background-color: transparent; 
 	text-decoration: none; 
-/*	object-fit: cover; */
 	display: block
 	object-position: 0px 0px;
 	font-size: 10px; 
 	height: 100px; 
 	filter: invert(50%);
-/*	text-align: center;*/
-	
 	padding-top: 200px;
-	
+	object-fit: contain;
 }
-/*
-.section2{
-	background-color: snow;
-      height: 100%;
-      position: absolute;
-      top: 828px;
-      left: 497px;
-	  right: 200px; 
-      width: 65.5%;
-	  z-index: -1;
-}
-*/
 hr {
 	float: center;
 	width: 50%;
@@ -179,19 +167,17 @@ hr {
 	padding-top: 20px; 
 	color: black;
 	line-height: 1.5; 
-/*	margin-right: 100px;*/
+	font-size: 20px;
 	margin-left: auto;
   	margin-right: auto; 
 	display: block;
     
 }
-	
-}
 
 .skills{
 	margin-left: auto;
   	margin-right: auto;
-	
+	width: 62vw;
 	display: block;
 	padding-bottom: 30px; 
 }
@@ -212,7 +198,8 @@ hr {
 	display: block;
 	margin-left: auto;
   	margin-right: auto; 
-	
+/*	width = "50%"*/
+	width: 62vw;
 }
 .hr1{
 	float: center;
@@ -222,9 +209,8 @@ hr {
 	border-width: 1px; 
 	border-color: white; 
 }
-.projects{
-	text-align: center; 
-	padding-top: 20px; 
+.projects {
+	text-align: center;  
 	 font-family: 'PT serif', sans-serif;
     font-weight: 100;
 	font-size: 30px;
@@ -234,25 +220,48 @@ hr {
   	margin-right: auto;
 }
 .ProjectPic{
-  
   width: 50%;
 }
 .ProjectPic2{
   
- justify-content: right;
-  
   width: 49.7%;
 }
 
-.projectBody{
-	
+.projectBody1{
+	font-family: 'Nunito Sans', sans-serif;
+    font-weight: 100;
+	text-align: left;
+	 
+	color: black;
+	line-height: 1.5; 
+	object-position: right;
+	display: block;
 }
-@media only screen and (max-width: 540px) {
-    .beach {
-      display:none;
-    }
+.projectHead1{
+	font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+	font-size: 20px;
+	text-align: left;
+	
+	color: black;
+	line-height: 1.5; 
+	margin-left: auto;
+  	margin-right: auto; 
+	display: block;
+}
+@media only screen and (max-width: 1000px) {
 	.column1 {
 		flex: none;
+	}
+   
+	.aboutmebody{
+		font-size: 18px;
+	}
+	.experience{
+		width: 100%
+	}
+	.skills{
+		width: 100%
 	}
 }
 @media only screen and (max-width: 800px) {
@@ -263,10 +272,10 @@ hr {
 		font-size: 15px;
 	}
 }
-@media only screen and (max-width: 1000px) {
-	.aboutmebody{
-		font-size: 12px;
-	}
+@media only screen and (max-width:1015px) {
+	.beach {
+      display:none;
+    }
 }
 
 
