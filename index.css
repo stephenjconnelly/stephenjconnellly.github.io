@@ -129,11 +129,12 @@ img beach{
 	background-color: transparent; 
 	text-decoration: none; 
 	display: block;
-	object-position: 0px 0px;
 	font-size: 10px; 
 	height: 100px; 
 	filter: invert(50%);
 	padding-top: 200px;
+	margin-right: auto;
+	margin-left: auto;
 	object-fit: contain;
 }
 hr {
@@ -194,7 +195,6 @@ hr {
 	display: block;
 	margin-left: auto;
   	margin-right: auto; 
-/*	width = "50%"*/
 	width: 62vw;
 }
 .hr1{
